@@ -1,0 +1,29 @@
+# This file is used to create the DESI Quick Look environment
+# $ conda create --name quicklook python=3.5 --file <this file>
+
+# Note: packages not available through conda are listed in extras.txt
+# and installed through pip
+
+# Packages required by DESI Quick Look pipeline,
+# use conda default versions
+
+h5py
+scikit-learn
+matplotlib
+
+# Packages required by the DESI Quick Look framework
+
+django=1.8.4
+markdown=2.6.2
+django-filter=0.15.3
+djangorestframework=3.6.2
+django-debug-toolbar==1.8
+pytest=3.0.7
+tornado=4.4.2 # make sure bokeh uses this version of tornado
+bokeh=0.12.4
+pandas=0.20.1
+requests=2.13.0
+sphinx=1.5.4
+flake8=3.3.0
+astropy=2.0
+
